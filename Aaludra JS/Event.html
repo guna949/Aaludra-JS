@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn">Click ME!</button>
+    <p id="hmm"></p>
+  
+    
+    <script>
+      document.getElementById("btn").addEventListener("mouseover", first);
+      document.getElementById("btn").addEventListener("click",second);
+      document.getElementById("btn").addEventListener("mouseout" ,third);
+         
+      function first(){
+        document.getElementById("hmm").innerHTML += "Mouse Over!<br>";
+      }
+
+      function second(){
+        document.getElementById("hmm").innerHTML = Date(); ;
+      }
+      function third(){
+        document.getElementById("hmm").innerHTML += "Mouse Out!<br>";
+      }
+
+    </script>
+</body>
+</html>

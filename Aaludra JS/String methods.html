@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name="Guna";
+        const Course = new String("Devloper");
+        const regerx = /[A-Z]/g;
+        const found = Course.match(regerx);
+        const match = name.match(regerx);
+        console.log(Course.length);
+        console.log(Course.charAt(5)); 
+        console.log(Course.charCodeAt(5));
+        console.log(Course.concat('',name));
+        console.log(Course.includes("na"));
+        console.log(match);
+        console.log(Course.repeat(10));
+        console.log (Course.slice(2));
+        console.log(Course.substring(12))
+        console.log(Course.toUpperCase())
+        console.log(Course.toLowerCase())
+    </script>
+</body>
+</html>
